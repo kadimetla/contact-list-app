@@ -12,7 +12,7 @@ contacts:Contact[]
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-this.dataService.getContacts().subscribe((data) => {console.log(data);this.contacts = data,
+this.dataService.getContacts().subscribe((data:Contact[]) => {console.log(data);this.contacts = data['contacts'],
   (err) => {
     console.log(err);
   }
