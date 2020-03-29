@@ -32,6 +32,7 @@ ng new app contact-list-app
 
 
 ng generate component header
+
 ng generate module app-routing --flat --module=app
 
 ng generate class contact --type=model
