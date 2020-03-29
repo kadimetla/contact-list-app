@@ -47,9 +47,13 @@ ng generate component contact-list
 
 
 npm install express --save
+
 npm install mongodb --save
 
  npm install @babel/compat-data --save-dev
+
  npm install @babel/compat-data@7.8.0 --save-dev
+
 npm run build
+
 npm run start
