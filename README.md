@@ -58,3 +58,8 @@ npm install mongodb --save
 npm run build
 
 npm run start
+
+
+// create 
+
+ng generate component contact-create

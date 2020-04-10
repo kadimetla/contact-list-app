@@ -59,8 +59,8 @@ app.get("/api/contact/:id", function(req,res) {
 
 
 app.post("/api/contact",function(req,res){
-  console.log(req);
-  contacts.append(req.body);
+  console.log(req.body);
+  contacts.push(req.body);
   res.status(201);
 })
   

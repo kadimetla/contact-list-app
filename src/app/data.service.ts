@@ -15,7 +15,7 @@ export class DataService {
   }
 
   public createContact(contact:Contact) {
-    this.http.post("/api/contact",contact);
+    this.http.post("/api/contact",contact).subscribe(data =>console.log(data));
      
   }
 }
