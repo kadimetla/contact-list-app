@@ -13,4 +13,9 @@ export class DataService {
   public getContacts():Observable<Contact[]> {
     return this.http.get<Contact[]>(this.contactsUrl);
   }
+
+  public createContact(contact:Contact) {
+    this.http.post("/api/contact",contact);
+     
+  }
 }

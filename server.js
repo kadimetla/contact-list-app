@@ -39,8 +39,8 @@ var server = app.listen(process.env.PORT ||8080, function() {
 contacts = [
 
 
-  {id: 1, name: "Contact 001", description: "Contact 001 des", email: "c001@email.com"},
-  {id: 2, name: "Contact 002", description: "Contact 002 des", email: "c002@email.com"},
+  {id: 1, name: "Adi", description: "My new contact", email: "adi@email.com"},
+  {id: 2, name: "James", description: "James works at delta", email: "delta@email.com"},
   {id: 3, name: "Contact 003", description: "Contact 003 des", email: "c003@email.com"},
   {id: 4, name: "Contact 004", description: "Contact 004 des", email: "c004@email.com"}
 ];
@@ -56,4 +56,11 @@ app.get("/api/contact/:id", function(req,res) {
   
 
 });
+
+
+app.post("/api/contact",function(req,res){
+  console.log(req);
+  contacts.append(req.body);
+  res.status(201);
+})
   

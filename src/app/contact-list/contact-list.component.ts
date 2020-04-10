@@ -8,11 +8,17 @@ import {Contact} from '../contact.model'
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-contacts:Contact[]
-  constructor(public dataService: DataService) { }
+
+
+  contacts:Contact[]
+ 
+
+
+
+constructor(public dataService: DataService) { }
 
   ngOnInit() {
-this.dataService.getContacts().subscribe((data:Contact[]) => {console.log(data);this.contacts = data['contacts'],
+this.dataService.getContacts().subscribe((data:Contact[]) => {console.log(data);this.contacts = data,
   (err) => {
     console.log(err);
   }
